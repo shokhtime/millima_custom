@@ -12,6 +12,8 @@ class UserRoleCheckBox extends StatefulWidget {
 }
 
 class _UserRoleCheckBoxState extends State<UserRoleCheckBox> {
+  // int _currentIndex = 0;
+
   final List<String> _roles = [
     'Student',
     'Teacher',
@@ -24,29 +26,26 @@ class _UserRoleCheckBoxState extends State<UserRoleCheckBox> {
       (RegisterFormCubit cubit) => cubit.state.roleId,
     );
 
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: List.generate(
-          3,
-          (index) => Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Checkbox(
-                value: checkBoxVal == index,
-                activeColor: AppColors.blue,
-                onChanged: (value) =>
-                    context.read<RegisterFormCubit>().roleIdChanged(index),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: List.generate(
+        3,
+        (index) => Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Checkbox(
+              value: checkBoxVal == index,
+              activeColor: AppColors.blue,
+              onChanged: (value) =>
+                  context.read<RegisterFormCubit>().roleIdChanged(index),
+            ),
+            Text(
+              _roles[index],
+              style: AppTextStyles.nunitoSansW500.copyWith(
+                color: AppColors.darkShadeGreen,
               ),
-              Text(
-                _roles[index],
-                style: AppTextStyles.nunitoSansW500.copyWith(
-                  color: AppColors.darkShadeGreen,
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

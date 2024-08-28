@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -49,21 +46,31 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyAIaRnev2V0XUVBr_Qz0LzARlrNDzEs51o',
+    appId: '1:872065121206:web:872ba09253126fa70ddf17',
+    messagingSenderId: '872065121206',
+    projectId: 'crm-flutter-34719',
+    authDomain: 'crm-flutter-34719.firebaseapp.com',
+    storageBucket: 'crm-flutter-34719.appspot.com',
+    measurementId: 'G-0GRCPMH50Y',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBMegU7qMceHOhHsQAJ1Z1JfX3Jp74mwVQ',
-    appId: '1:343315812029:android:e9764736c8250dcc88b1d4',
-    messagingSenderId: '343315812029',
-    projectId: 'crmo-7342e',
-    storageBucket: 'crmo-7342e.appspot.com',
+    apiKey: 'AIzaSyDw09s2z5bZDQr014W_9QJUcha8i1PTCxg',
+    appId: '1:872065121206:android:b84587d5ad1cf7240ddf17',
+    messagingSenderId: '872065121206',
+    projectId: 'crm-flutter-34719',
+    storageBucket: 'crm-flutter-34719.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBw9gtOYLOoLXlPC0RUdQBZeiinp8ux4P8',
-    appId: '1:343315812029:ios:f19ba3e4b3bc900e88b1d4',
-    messagingSenderId: '343315812029',
-    projectId: 'crmo-7342e',
-    storageBucket: 'crmo-7342e.appspot.com',
-    iosClientId: '343315812029-om54rhqbk12d4nms0kfqibv9ms4no491.apps.googleusercontent.com',
+    apiKey: 'AIzaSyCSeNn7TrAdwPceH_WwtoxrvCRvUASmyMg',
+    appId: '1:872065121206:ios:dee2b9099e6f1e2b0ddf17',
+    messagingSenderId: '872065121206',
+    projectId: 'crm-flutter-34719',
+    storageBucket: 'crm-flutter-34719.appspot.com',
+    iosClientId: '872065121206-pv1r3auorj2c0tthuhjeaqee1gn34cvp.apps.googleusercontent.com',
     iosBundleId: 'com.example.crmFlutter',
   );
 }

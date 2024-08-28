@@ -21,7 +21,7 @@ class RegisterScreen extends StatelessWidget {
       value: getIt.get<RegisterFormCubit>(),
       child: BlocListener<AuthBloc, AuthState>(
         listener: (context, state) {
-          if (state.authStatus == AuthStatus.authenticated) {
+          if(state.authStatus == AuthStatus.authenticated){
             Navigator.of(context).pop();
           }
         },
@@ -29,8 +29,11 @@ class RegisterScreen extends StatelessWidget {
           body: ListView(
             physics: const AlwaysScrollableScrollPhysics(),
             padding: const EdgeInsets.only(right: 20, left: 20, top: 50),
-            children: const [
-              _RegisterInToMilliyma(),
+            children: [
+              const _MainText(),
+              40.sizedBoxH,
+              const _RegisterInToMilliyma(),
+              const SizedBox(),
             ],
           ),
         ),

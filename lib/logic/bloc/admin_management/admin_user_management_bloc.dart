@@ -3,8 +3,11 @@ import 'package:crm_flutter/data/models/user/user.dart';
 import 'package:crm_flutter/data/repositories/admin_user_management_repository.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+
 part 'admin_user_management_bloc.freezed.dart';
+
 part 'admin_user_management_event.dart';
+
 part 'admin_user_management_state.dart';
 
 class AdminUserManagementBloc
@@ -31,7 +34,7 @@ class AdminUserManagementBloc
       if (appResponse.isSuccess && appResponse.errorMessage.isEmpty) {
         List<User> allUsers = [];
 
-        for (var data in (appResponse.data as List)) {
+        for(var data in (appResponse.data as List)){
           allUsers.add(User.fromJson(data));
         }
 

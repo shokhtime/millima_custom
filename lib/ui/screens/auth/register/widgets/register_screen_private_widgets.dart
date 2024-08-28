@@ -1,6 +1,8 @@
 part of '../register_screen.dart';
 
-class MainText extends StatelessWidget {
+class _MainText extends StatelessWidget {
+  const _MainText();
+
   @override
   Widget build(BuildContext context) {
     return Row(

@@ -37,6 +37,22 @@ class AdminPanelDrawer extends StatelessWidget {
               AppRouter.adminPanelGroupsScreen,
             ),
           ),
+          ListTile(
+            leading: const Icon(Icons.meeting_room_outlined),
+            title: const Text('Rooms'),
+            onTap: () => Navigator.pushNamed(
+              context,
+              AppRouter.adminPanelRoomsScreen,
+            ),
+          ),
+          ListTile(
+            leading: const Icon(Icons.subject),
+            title: const Text('Subjects'),
+            onTap: () => Navigator.pushNamed(
+              context,
+              AppRouter.adminPanelSubjectsScreen,
+            ),
+          ),
         ],
       ),
     );
