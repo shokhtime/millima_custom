@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "343315812029",
+    "project_id": "crmo-7342e",
+    "storage_bucket": "crmo-7342e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343315812029:android:df6af5d44bcfe36888b1d4",
+        "android_client_info": {
+          "package_name": "com.example.crm_flutt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343315812029-iq8lm0qus7l81126pqikmlulvuc4enl6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMegU7qMceHOhHsQAJ1Z1JfX3Jp74mwVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343315812029-iq8lm0qus7l81126pqikmlulvuc4enl6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "343315812029-om54rhqbk12d4nms0kfqibv9ms4no491.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.crmFlutter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343315812029:android:e9764736c8250dcc88b1d4",
+        "android_client_info": {
+          "package_name": "com.example.crm_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343315812029-iq8lm0qus7l81126pqikmlulvuc4enl6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMegU7qMceHOhHsQAJ1Z1JfX3Jp74mwVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343315812029-iq8lm0qus7l81126pqikmlulvuc4enl6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "343315812029-om54rhqbk12d4nms0kfqibv9ms4no491.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.crmFlutter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
